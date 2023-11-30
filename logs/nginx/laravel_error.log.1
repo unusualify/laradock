@@ -1,0 +1,58 @@
+2023/10/27 10:30:26 [error] 11#11: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:30:27 [error] 11#11: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:31:08 [error] 11#11: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:31:47 [error] 11#11: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:31:48 [error] 11#11: *19 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:32:07 [error] 10#10: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Database\Models\PackageService' not found in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php:389
+Stack trace:
+#0 /var/www/olmadikofis/database/models/Package.php(49): Illuminate\Database\Eloquent\Model->hasManyThrough('Database\\Models...', 'Database\\Models...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(690): Database\Models\Package->locations()
+#2 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Relations/Relation.php(106): Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(694): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(662): Illuminate\Database\Eloquent\Builder->getRelation('locations')
+#5 /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Builder.php(642): Illuminate\Database\Eloquent\Builder-> in /var/www/olmadikofis/vendor/illuminate/database/Eloquent/Concerns/HasRelationships.php on line 389" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:32:54 [error] 11#11: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Trait 'Database\Models\Traits\HasActivity' not found in /var/www/olmadikofis/database/models/Package.php on line 12" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:32:56 [error] 11#11: *40 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Trait 'Database\Models\Traits\HasActivity' not found in /var/www/olmadikofis/database/models/Package.php on line 12" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"
+2023/10/27 10:34:29 [error] 11#11: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'admin_olmadikofis.package_services' doesn't exist in /var/www/olmadikofis/vendor/illuminate/database/Connection.php:368
+Stack trace:
+#0 /var/www/olmadikofis/vendor/illuminate/database/Connection.php(368): PDO->prepare('select `package...')
+#1 /var/www/olmadikofis/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->Illuminate\Database\{closure}('select `package...', Array)
+#2 /var/www/olmadikofis/vendor/illuminate/database/Connection.php(672): Illuminate\Database\Connection->runQueryCallback('select `package...', Array, Object(Closure))
+#3 /var/www/olmadikofis/vendor/illuminate/database/Connection.php(376): Illuminate\Database\Connection->run('select `package...', Array, Object(Closure))
+#4 /var/www/olmadikofis/vendor/illuminate/database/Query/Builder.php(2414): Illuminate\Database\Connection->select('select `package...', Array, true)
+#5 /var/www/olmadikofis/vendor/illuminate/database/Query/Builder.php in /var/www/olmadikofis/vendor/illuminate/database/Connection.php on line 712" while reading response header from upstream, client: 172.19.0.1, server: olmadikofis.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.6:9000", host: "olmadikofis.test"

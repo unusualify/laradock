@@ -1913,6 +1913,36 @@ RUN if [ ${INSTALL_GITHUB_CLI} = true ]; then \
 ;fi
 
 
+###########################################################################
+# ZSH
+###########################################################################
+
+ARG INSTALL_ZSH=true
+
+USER root
+
+RUN if [ ${INSTALL_ZSH} = true ]; then \
+    apt-get update -yqq && \
+    apt-get install -yqq zsh curl git && \
+    # Install Oh My Zsh for a better experience (optional but recommended)
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended && \
+    # Copy .zshrc to the laradock user home as well
+    cp /root/.zshrc /home/laradock/.zshrc && \
+    cp -r /root/.oh-my-zsh /home/laradock/.oh-my-zsh && \
+    sed -i "s|export ZSH=.*|export ZSH=/home/laradock/.oh-my-zsh|g" /home/laradock/.zshrc && \
+    chown -R laradock:laradock /home/laradock/.zshrc /home/laradock/.oh-my-zsh && \
+    # Set zsh as default shell for both root and laradock user
+    chsh -s /bin/zsh root && \
+    chsh -s /bin/zsh laradock \
+;fi
+
+USER laradock
+
+###########################################################################
+# Set ZSH as default shell
+###########################################################################
+CMD ["/bin/zsh"]
+
 #
 #--------------------------------------------------------------------------
 # Final Touch
@@ -1928,3 +1958,5 @@ RUN apt-get clean && \
 
 # Set default work directory
 WORKDIR /var/www
+
+

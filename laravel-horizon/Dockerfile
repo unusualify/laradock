@@ -32,7 +32,8 @@ RUN apk --update add wget \
   libgsasl-dev \
   oniguruma-dev \
   supervisor \
-  procps; \
+  procps \
+  openssh-client; \
   if [ $(php -r "echo PHP_VERSION_ID - PHP_RELEASE_VERSION;") = "50600" ] || \
      [ $(php -r "echo PHP_VERSION_ID - PHP_RELEASE_VERSION;") = "70000" ]; then \
     apk --update add libressl libressl-dev; \

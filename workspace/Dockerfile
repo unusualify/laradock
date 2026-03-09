@@ -1656,6 +1656,7 @@ RUN set -xe; php -v | head -n 1 | grep -q "PHP ${LARADOCK_PHP_VERSION}."
 USER root
 
 ARG SHELL_OH_MY_ZSH=false
+RUN echo "SHELL_OH_MY_ZSH: ${SHELL_OH_MY_ZSH}"
 RUN if [ ${SHELL_OH_MY_ZSH} = true ]; then \
     apt install -y zsh \
 ;fi
@@ -1926,6 +1927,11 @@ RUN if [ ${INSTALL_ZSH} = true ]; then \
     apt-get install -yqq zsh curl git && \
     # Install Oh My Zsh for a better experience (optional but recommended)
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended && \
+    # Load custom aliases in zsh (aliases.sh is copied earlier in the Dockerfile)
+    echo "" >> /root/.zshrc && \
+    echo "# Load Custom Aliases" >> /root/.zshrc && \
+    echo "source ~/aliases.sh" >> /root/.zshrc && \
+    echo "" >> /root/.zshrc && \
     # Copy .zshrc to the laradock user home as well
     cp /root/.zshrc /home/laradock/.zshrc && \
     cp -r /root/.oh-my-zsh /home/laradock/.oh-my-zsh && \
